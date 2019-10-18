@@ -1,16 +1,17 @@
 import React from "react";
 // import PropTypes from 'prop-types';
-import { Link, useRouteMatch } from "react-router-dom";
+import { useRouteMatch } from "react-router-dom";
+import Header from "../../components/Header/Header";
+import List from "../../components/List/List";
+import "./Home.css";
 
 const Home = () => {
   let { url } = useRouteMatch();
 
   return (
-    <div>
-      <h1>HOME</h1>
-      <Link to={`${url}/charizard`}>Charizard</Link>
-      <Link to={`${url}/blastoise`}>Blastoise</Link>
-
+    <div className="container">
+      <Header />
+      <List url={url} />
     </div>
   );
 };
