@@ -8,8 +8,8 @@ const Header = () => (
       className="logo"
       alt="Pokémon"
     />
-    <h5>Generation 1</h5>
-    <h6>151 pokémon</h6>
+    <h3 className="headerTitle">Generation 1</h3>
+    <h5 className="headerSubtitle">151 pokémon</h5>
   </header>
 );
 

@@ -4,10 +4,8 @@ import "./ItemList.css";
 
 const ItemList = ({ url, name }) => (
   <Link to={`${url}/${name}`} className="itemWrapper">
-    <div>
-      <img src={`http://pokestadium.com/sprites/xy/${name}.gif`} alt={name} />
-      <span className="itemText">{name}</span>
-    </div>
+      <img src={`http://pokestadium.com/sprites/xy/${name}.gif`} alt={name} className="itemImage" />
+      <h4 className="itemTitle">{name}</h4>
   </Link>
 );
 

@@ -2,4 +2,33 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex-grow: 1; */
+  /* width: 100%; */
+  padding: 0px 40px;
 }
+
+/* @media screen and (min-width: 768px) {
+    .listWrapper {
+        width: 100%;
+    }
+} */
+
+@media screen and (min-width: 525px) {
+  .listWrapper {
+    padding: 0px 60px;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .listWrapper {
+    max-width: 900px;
+  }
+}
+
+/*
+@media screen and (min-width: 1200px) {
+    .listWrapper {
+        width: 60%;
+    }
+} */

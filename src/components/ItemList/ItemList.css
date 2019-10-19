@@ -1,13 +1,46 @@
 .itemWrapper {
-  flex-grow: 1;
-  width: 33%;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  min-width: 168px;
+  height: 168px;
   border: 1px solid;
   border-color: black;
   border-radius: 5px;
   background-color: white;
+  margin: 10px 0px;
+  text-decoration: none;
 }
 
 .itemWrapper:hover {
-  background-color: lightgray;
+  background-color: gainsboro;
+}
+
+@media screen and (min-width: 525px) {
+  .itemWrapper {
+    /* margin: 10px 0px; */
+    width: 48.5%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .itemWrapper {
+    /* margin: 10px 0px; */
+    width: 30%;
+  }
+}
+
+.itemTitle {
+  position: relative;
+  bottom: 15px;
+  margin: 0;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #444444;
+}
+
+.itemImage {
+  margin: auto;
 }

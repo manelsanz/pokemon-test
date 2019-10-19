@@ -1,3 +1,17 @@
+header {
+  margin-bottom: 30px;
+}
+
 .logo {
-    max-width: 250px;
+  max-width: 290px;
+}
+
+.headerSubtitle {
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+.headerTitle {
+  padding-top: 15px;
+  margin-bottom: 0px;
 }
