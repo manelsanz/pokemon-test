@@ -11,8 +11,9 @@ const List = ({ url, data }) => (
   </div>
 );
 
-// List.propTypes = {
-//   store: PropTypes.array.isRequired
-// };
+List.propTypes = {
+  url: PropTypes.string.isRequired,
+  data: PropTypes.array.isRequired
+};
 
 export default List;

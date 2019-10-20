@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Detail from "./pages/Detail/Detail";
-import PropTypes from "prop-types";
 
 const App = () => (
   <Router>
@@ -20,9 +19,5 @@ const App = () => (
     </Switch>
   </Router>
 );
-
-// App.propTypes = {
-//   store: PropTypes.isRequired
-// };
 
 export default App;

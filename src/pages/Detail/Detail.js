@@ -69,9 +69,12 @@ class Detail extends Component {
   }
 }
 
-// Detail.propTypes = {
-//   store: PropTypes.array.isRequired
-// };
+Detail.propTypes = {
+  match: PropTypes.object.isRequired,
+  onGetDetails: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  details: PropTypes.object
+};
 
 const mapStateToProps = state => {
   return {

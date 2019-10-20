@@ -9,7 +9,8 @@ import { getList } from "../../actions/index";
 
 class Home extends Component {
   componentDidMount() {
-    this.props.onGetList();
+    const { onGetList } = this.props;
+    onGetList();
   }
 
   render() {
@@ -28,9 +29,12 @@ class Home extends Component {
   }
 }
 
-// Home.propTypes = {
-//   store: PropTypes.array.isRequired
-// };
+Home.propTypes = {
+  match: PropTypes.object.isRequired,
+  onGetList: PropTypes.func.isRequired,
+  isLoading: PropTypes.bool.isRequired,
+  list: PropTypes.array.isRequired
+};
 
 const mapStateToProps = state => {
   return {
