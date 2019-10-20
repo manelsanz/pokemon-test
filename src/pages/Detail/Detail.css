@@ -18,7 +18,7 @@
   }
 }
 
-.closeButton {
+.linkBack {
   position: absolute;
   background: none;
   border: none;
@@ -26,6 +26,11 @@
   top: 10px;
   right: 15px;
   color: #570073;
+  text-decoration: none;
+}
+
+.linkBack:active {
+  color: red;
 }
 
 .itemName {
